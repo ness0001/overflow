@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow - Contactanos</title>
+
+    <meta name="description" content="Atencion al cliente"/>
+	<meta name="author" content="K Stephan Torres"  />
+	<meta name="keyword" content="Conocenos, contactanos, servicios, preguntas, soluciones" />
+	 <link rel="icon" href="../images/logo3.ico">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script href="../js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/main.css"> 
+
+</head>
+<body>
+    <header > 
+		<div class="baner">
+				
+			<a class="baner__enlace" href="../index.html"><img src="../images/logo.png" alt="Icono Overflow" width="300" height="300"> <!-- tambien se puede usar width="300"/ o solo height="300"/ -->
+			</a>	
+		
+		
+			<h1 class="baner__titulo">OVERFLOW</h1>	 
+		
+	</div>
+		
+    
+
+    </header>
+    
+    <div id="cont-nav">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+			<a class="navbar-brand" href="#"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			  <div class="navbar-nav m-auto">
+				<a class="nav-item nav-link" href="../index.html">Home </a>
+				<a class="nav-item nav-link" href="servicios.html">Servicios </a>
+				<a class="nav-item nav-link" href="trabajos.html">Nuestros Trabajos</a>
+				<a class="nav-item nav-link" href="productos.html">Productos <span class="badge badge-secondary anim"> Nuevo </span></a>
+				<a class="nav-item nav-link" href="novedades.html">Novedades</a>
+				<a class="nav-item nav-link" href="acerca.html">Acerca de Nosotros </a>
+				<a class="nav-item nav-link active" href="#" tabindex="-1" aria-disabled="true">Contactanos <span class="sr-only">(current)</span></a>
+			  </div>
+			</div>
+			
+		</nav>
+	</div>
+    <hr>
+
+    <section >
+		
+		<form  class="mx-md-5 px-md-5 my-3" action="#" method="GET" enctype="application/x-www-form-urlcode">
+			
+				<fieldset class="formulario">
+						<legend>Por cualquier duda o consulta póngase en contacto:</legend>	
+						
+						<div class="form-group">
+						<label for="name" >Nombre:</label>
+						<input type="text" name="user_name" class="form-control">
+						
+						<label for="second_name" >Apellido:</label>
+						<input type="text" name="user_second_name" class="form-control">
+						
+						<label for="mail"  id="exampleInputEmail1" aria-describedby="emailHelp">E-mail:</label>
+						<input type="email" name="user_mail" class="form-control">
+						</div>
+
+						
+					<fieldset class="form-group">
+						<label>Eres:</label>
+						<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+						<label class="form-check-label" for="exampleRadios1">
+							Cliente
+						</label>
+						</div>
+						<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+						<label class="form-check-label" for="exampleRadios2">
+							Entidad Publica
+						</label>
+						</div>
+						<div class="form-check">
+						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+						<label class="form-check-label" for="exampleRadios3">
+							Entidad Privada
+						</label>
+						</div>
+					</fieldset>
+					    <div class="form-group">
+							<label for="consulta">Consulta sobre:</label>
+							<select name="Consulta">
+								<option value="producto">Producto</option>
+								<option value="mantenimiento">Matenimiento de Red</option>
+								<option value="instalacion">Instalacion de Red</option>
+								<option value="usound">U sound</option>
+
+							</select>
+						</div>
+ 						
+
+						<div class="form-group form-check">
+							<input type="checkbox" name="acepta" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1" >Aceptar Terminos y condiciones</label>
+						
+						</div>
+
+						<input type="submit" class="btn btn-primary"  data-toggle="collapse" data-target="#demo">
+						<input type="reset" class="btn btn-primary" data-toggle="modal" data-target="#myModal"> 
+							<!-- The Modal -->
+							<div class="modal" id="myModal">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+
+							      <!-- Modal Header -->
+							      <div class="modal-header">
+							        <h4 class="modal-title">Restablecer</h4>
+							        <button type="button" class="close" data-dismiss="modal">&times;</button>
+							      </div>
+
+							      <!-- Modal body -->
+							      <div class="modal-body">
+							        Los datos fueron borrados
+							      </div>
+
+							      <!-- Modal footer -->
+							      <div class="modal-footer">
+							        <button type="button" class="btn btn-danger" data-dismiss="modal">Aceptar</button>					
+							      </div>
+
+							    </div>
+							  </div>
+							</div>
+
+						<div id="demo" class="collapse">Datos enviados con exito</div>
+					
+
+				</fieldset>	
+			
+			
+
+		</form>
+		
+	</section>
+
+    <footer class="ppagina">
+    	<div>
+	    	<p class="ppagina__texto">Seguí a Overflow</p>
+	    	<ul class="ppagina__redes" >
+	    		<li><a class="ppagina__enlace" target="_blank" href="https://www.facebook.com/Overflow.Networking/?ref=page_internal">Facebook</a></li>
+	    		<li><a class="ppagina__enlace" target="_blank" href="https://www.instagram.com/overflow.detailers/">Instagram</a></li>
+	    	</ul>
+    	</div>
+        <div class="ppagina__marca">
+        	
+		       	<img class="ppagina__img" src="../images/logo.png" alt="Icono Overflow" width="100"/> 
+				<p class="ppagina__texto">OverFlow, Soluciones Informáticas de Redes Corporativas y Domiciliarias</p>
+			
+		</div>
+
+    </footer>
+
+<!-- justo antes de que cierre body -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

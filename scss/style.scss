@@ -1,0 +1,342 @@
+@import "variables";
+@import "mixin";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+// body{
+//     background-image: url("../images/fondo.jpeg");
+//     background-repeat: no-repeat;
+//      background-size:cover;
+// }
+
+/*----------------------- C A B E C E R A ------------------------*/
+section{
+    padding:$lados;
+}
+
+.baner {
+    //@extend section ;
+    background-image: url("../images/baner.jpg");
+	background-repeat: no-repeat;
+	background-size:cover; 
+	padding-bottom: 1%;
+	display:grid;
+	grid-template-rows: 3fr 1fr;
+	align-items:center;
+    justify-items:center;
+    padding-bottom: 10px;
+    .baner__titulo{
+        font-size:xxx-large;
+        font-family:Helvetica;
+        color: #fff;
+        letter-spacing:3px;
+        width: 100%;
+        text-align: center;
+
+    }
+	
+}
+
+
+
+/*------------------------------- N A V E G A D O R -----------------------*/
+
+
+
+
+@keyframes un_efecto {
+    0%{ background: rgb(92, 92, 92); }
+   
+    50%{ background: red;
+      }
+    
+    100%{background: rgb(92, 92, 92);}
+ }
+ 
+.anim{
+    background-color: white;
+			animation-name: un_efecto;
+   			animation-iteration-count: infinite;
+   			animation-timing-function: ease-in;
+   			animation-duration: 2s;
+   			animation-delay: 0s;
+ 
+}
+
+/*------------------------------------ F O O T E R  ----------------------------------------*/
+
+.ppagina {
+    padding:10px;
+	color: #fff;
+	background-image: url("../images/baner.jpg");
+	background-size: cover;
+	background-position: bottom;
+    text-align: center;
+    margin-top: 20px;
+	.ppagina__texto {
+		font-family: Helvetica;
+        font-size: small;
+        margin-bottom: 0px;
+    }
+    .ppagina__redes {
+        padding: 10px 25px 0px 25px;
+	    list-style:none;
+    }
+    .ppagina__img {display: none;}
+
+    .ppagina__enlace{
+        letter-spacing:3px;
+	    text-decoration: none;
+	    color: white;
+    }
+}
+
+
+
+/*---------------------------- C O N T E N I D O ------------------------*/
+
+
+
+.contenido {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	padding-top: 50px;
+    padding-left:10px;
+    padding-right:10px;
+	
+	.contenido__mas {
+		font-size: medium;
+	}
+	.contenido__enlace {
+		text-decoration: none;
+		color: black;
+	}
+	.contenido__img {
+		width: 100%;
+		height: 85%;
+	}
+	.contenido__titulo {
+        font-size: x-large;
+        text-align: center;
+        padding-bottom: 10px;
+        font-family: Arial, Helvetica, Verdana;
+    }
+    .contenido__descripcion{
+        font-family:'Raleway', sans-serif;;
+    }
+}
+
+
+
+/*-----------------------------------------F O R M U L A R I O -------------------------------------------------------------*/ 
+
+
+/*-------------------------- S E R V I C I O S -------------------------------*/
+.servicios{
+    .servicios__lista{
+        text-align:center; 
+        font-family: $robo;
+        margin-bottom:50px;
+        list-style-type:none ;
+        
+        @include flex-c;
+        align-items:center;
+    }
+
+    .servicios__caja{
+        border-bottom: 5px black dotted;
+        margin:$lados;
+        padding: 100px;	
+    }
+    .servicios__caja--b{
+    display:flex;
+    flex-direction:column-reverse;
+    }
+}
+
+.servicios__img{
+    height:470px;
+    width:470px;
+   
+}
+.servicios__img--b
+    {   
+        width:470px;
+        height:450px;
+    }
+
+/*-----------------------------A V A T A R --------------------------*/
+.avatar {
+	display: flex;
+	flex-flow: column ;
+    margin-top: 20px ;
+}
+
+
+
+.avatar__lista{
+list-style-type:none;
+display: flex;
+flex-flow:row wrap ;
+
+
+}
+.avatar{
+   
+    .avatar__caja{
+        text-align: center;
+        padding:30px;
+         
+        
+    }
+    .avatar__lista{display:flex;
+    justify-content:center;}
+
+    .avatar__titulo {
+        font-size:xx-large;
+       
+        text-align:center;}
+    
+    .avatar__img {
+            width: 100px;
+            height: 100px;
+            
+        }
+    
+    .avatar__img--ff {
+        width: 125px;
+    }
+
+}
+
+
+#nos{
+	font-size:x-large;
+    padding:20px 50px 20px 50px;}
+
+/*------------------------- N O V E D A D E S --------------------------*/
+    .nov {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        .nov__articulo {
+            padding: 20px;
+        }
+    }
+
+
+/*---------------------- P R O D U C T O -----------------*/
+
+.producto{ 
+    text-align:center; 
+    .producto__img{padding:30px 0px 30px 0px;}
+}
+
+
+/*---------------------- P A N T A L L A  P C -----------------*/
+
+@media (min-width: 1023px){
+
+    
+   .con-con{
+       padding:0px;
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 50px;
+        justify-items:center;
+
+   }
+
+
+   
+    .baner{
+        display:grid;
+        grid-template-columns: 1fr 3fr 1fr;
+
+    .baner__titulo{letter-spacing:5px;}
+    }
+    
+    
+
+    
+
+
+     .ppagina{
+        text-align: start;
+       
+        display:grid;
+        grid-template-columns:1fr 1fr;
+
+        .ppagina__marca{text-align:end;
+        .ppagina__img{
+                 display: inline; 
+               
+             }
+        }
+        
+    }
+
+    .servicios__lista {
+        display:flex;
+        flex-direction:column;
+    }
+    .servicios__caja{
+        display:flex;
+        flex-direction:row;
+        .caja__mar{margin:10px;
+        padding:50px; }
+    }
+    .servicios__caja--b{
+    display:flex;
+    flex-direction:row !important;
+    }
+
+}
+
+/*------------------- TAMAÑO TABLET -----------------------------*/
+
+@media (min-width: 680px)
+{
+    
+	.baner {
+	display:grid;
+	grid-template-columns: 30% 60%;
+	font-size:xx-large;
+	padding: 0;
+    letter-spacing:0px;
+    height: 300px;
+  	}
+    
+ 
+  
+}
+
+@media (max-width:480px)
+{
+
+.servicios__img{
+    height:90%;
+    width:90%;
+}
+.servicios__img--b
+    {   
+        height:90%;
+        width:90%;
+    }
+.servicios__caja{
+        padding:10px !important;	
+        
+}
+
+.servicios__caja--b{
+    display:flex;
+    flex-direction:column-reverse;
+}
+
+}
