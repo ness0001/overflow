@@ -8,51 +8,50 @@
 	<meta name="author" content="K Stephan Torres"  />
 	<meta name="keyword" content="Mikrotik, Redes Informaticas, Usound, Redes Corporativas, Servicio de Internet"/>
 	 <link rel="icon" href="../images/logo3.ico">
+
+	<!---------------------------------------------------- FONTS ----------------->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<script href="../js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/main.css"> 
 </head>
 <body>
 
-<header > 
+	<header  > 
 		
-		<div class="baner">
-				
-					<a class="baner__enlace" href="../index.html"><img class="baner__img" src="../images/logo.png" alt="Icono Overflow" width="300" height="300"> <!-- tambien se puede usar width="300"/ o solo height="300"/ -->
-					</a>	
-				
-					<h1 class="baner__titulo">OVERFLOW</h1>	 
-				
-			</div>
-				
-		
+		<nav class="navbar navbar-expand-lg navbar-light  costados navbar-dark bg-dark">
 
-</header>
+		   <!-- <div class="container"> -->
+			   <a class="navbar-brand" href="../index.html"> <img src="../images/logo3.ico" alt="">Overflow</a>
+		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			 <span class="navbar-toggler-icon"></span>
+		   </button>
+		   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			 <ul class="navbar-nav ml-auto">
+			   <li> <a class="nav-item nav-link" href="../index.html"> Home </a></li>
+			   <li> <a class="nav-item nav-link active" href="#">Servicios </a></li>
+			   <li> <a class="nav-item nav-link" href="trabajos.html">Nuestros Trabajos</a></li> 
+			   <li> <a class="nav-item nav-link" href="productos.html">Productos <span class="badge badge-secondary anim"> Nuevo </span></a></li>
+			   <li> <a class="nav-item nav-link" href="acerca.html">Acerca de Nosotros <span class="sr-only">(current)</span></a></li>
+			   <li> <a class="nav-item nav-link" href="contactanos.html" tabindex="-1" aria-disabled="true">Contactanos</a></li>
+			 </ul>
+		   </div>
+		   <!-- </div> -->
 
-<div id="cont-nav">
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	   </nav>
 
-		<a class="navbar-brand" href="#"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-		  <div class="navbar-nav m-auto">
-			  
-			<a class="nav-item nav-link" href="../index.html">Home</a>
-			<a class="nav-item nav-link active" href="#">Servicios  </span> <span class="sr-only">(current)</span></a>
-			<a class="nav-item nav-link" href="trabajos.html">Nuestros Trabajos</a>
-			<a class="nav-item nav-link" href="productos.html">Productos <span class="badge badge-secondary anim"> Nuevo</a>
-			<a class="nav-item nav-link" href="novedades.html">Novedades</a>
-			<a class="nav-item nav-link" href="acerca.html">Acerca de Nosotros</a>
-			<a class="nav-item nav-link" href="contactanos.html" tabindex="-1" aria-disabled="true">Contactanos</a>
-		  </div>
-		</div>
-		
-	</nav>
-</div>
-	<hr>
-
+   </header>
 
 
 
@@ -64,15 +63,16 @@
 				<li class="servicios__caja">
 					<div class="caja__mar">
 					<h2>Instalación de Redes Informáticas</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolor, explicabo, magni? Ad accusantium non ullam, molestiae eveniet soluta ipsum fugit est! Veniam, quas nulla ut excepturi quasi, accusantium quaerat? Accusantium? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, optio aut consectetur provident culpa ex nobis! Blanditiis qui vel tempora odio nesciunt ab dignissimos ad harum, officia repudiandae, cum dolores!</p>
+					<p>El objetivo de la instalación de redes informáticas es facilitar la conexión entre dos o más de estos dispositivos para que puedan compartir información y recursos.
+						Las redes informáticas habituales en los hogares son las redes PAN y LAN. Las primeras permiten conectar smartphones, tablets, impresoras, videoconsolas, ordenadores portátiles o equipos de escritorio usando un cable. Su principal inconveniente es que tienen cobertura limitada (hasta 10 metros).</p>
 					</div>
-					<img class="servicios__img" src="../images/compu-ico.png" >
+					<img class="servicios__img m-auto" src="../images/compu-ico.png" >
 				</li>
 				<li class="servicios__caja servicios__caja--b">
-					<img class="servicios__img--b" src="../images/optimizacion.png" >
+					<img class="servicios__img--b m-auto" src="../images/optimizacion.png" >
 					<div class="caja__mar">
 					<h2>Optimización de Redes Informáticas </h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolor, explicabo, magni? Ad accusantium non ullam, molestiae eveniet soluta ipsum fugit est! Veniam, quas nulla ut excepturi quasi, accusantium quaerat? Accusantium? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, optio aut consectetur provident culpa ex nobis! Blanditiis qui vel tempora odio nesciunt ab dignissimos ad harum, officia repudiandae, cum dolores!</p>
+					<p>La optimización de redes informáticas, sea en el hogar o en la empresa, comprende la correcta instalación y conexión de los equipos informáticos a través de un sistema complejo de cables y dispositivos físicos o inalámbricos, con el fin de compartir servicios, información y aparatos disponibles como televisiones, equipos de música, sistemas de domótica y vigilancia, impresoras…</p>
 					</div>
 					
 					
@@ -80,15 +80,25 @@
 				<li class="servicios__caja">
 					<div class="caja__mar">
 					<h2>Soluciones Técnicas de Redes ya existentes</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolor, explicabo, magni? Ad accusantium non ullam, molestiae eveniet soluta ipsum fugit est! Veniam, quas nulla ut excepturi quasi, accusantium quaerat? Accusantium? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, optio aut consectetur provident culpa ex nobis! Blanditiis qui vel tempora odio nesciunt ab dignissimos ad harum, officia repudiandae, cum dolores!</p>
+					<p>Gestionar, interpretar y apoyar proyectos de redes de comunicación de datos.
+						Administrar, instalar y configurar redes de cómputo y sistemas tele informáticos, centros de servicios integrados, servicios de acceso a Internet, servidores y redes corporativas de información como Intranet y Extranet.
+						Administrar e Investigar sobre tecnologías y políticas de seguridad informática en redes de datos.
+						Atender mesas de ayuda para atender solicitudes de soporte tecnológico sobre problemas relacionados con las redes.
+						Realizar mantenimiento de infraestructura tecnológica, desde computadores hasta redes modernas de información.
+						Elaborar informes detallados sobre el estado y mantenimiento de equipos de computo, redes de datos y demás infraestructura tecnológica.
+						Supervisar la planificación, diseño y montaje de redes y telecomunicaciones.</p>
 					</div>
-					<img class="servicios__img" src="../images/engrane.png" >
+					<img class="servicios__img m-auto" src="../images/engrane.png" >
 				</li>
-				<li class="servicios__caja servicios__caja--b">
-					<img class="servicios__img" src="../images/reparacion.png" >
+				<li class="servicios__caja  servicios__caja--b">
+					<img class="servicios__img m-auto" src="../images/reparacion.png" >
 					<div class="caja__mar">
 					<h2>Reparación de equipos Informáticos</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dolor, explicabo, magni? Ad accusantium non ullam, molestiae eveniet soluta ipsum fugit est! Veniam, quas nulla ut excepturi quasi, accusantium quaerat? Accusantium? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, optio aut consectetur provident culpa ex nobis! Blanditiis qui vel tempora odio nesciunt ab dignissimos ad harum, officia repudiandae, cum dolores!</p>
+					<p>Reparamos todo tipo de equipos informáticos y perisféricos: Ordenadores fijos y portátiles, tablets, móviles, impresoras, TPVs, cámaras IP y de CCTV, entre otros.
+						Nuestro servicio se caracteriza por lo siguientes:				
+						Diagnóstico preciso de la avería y presupuesto al cliente antes de iniciar el proceso de reparación.
+						Además el presupuesto en muchos casos le recomendamos al cliente posibles mejoras a realizar sobre el equipo, si es que las hubiera.
+						Mantenemos al  cliente totalmente informado durante el proceso de la resolución de la avería (informe de cuando recibimos su material, de dudas que podamos tener sobre el servicio tecnico a realizar, posibles problemas que nos encontremos hasta tener la avería totalmante solventada…).</p>
 					</div>
 					
 				</li>
@@ -98,20 +108,71 @@
 	</section>
 
 
-	<footer class="ppagina">
-    	<div>
-	    	<p class="ppagina__texto">Seguí a Overflow</p>
-	    	<ul class="ppagina__redes">
-	    		<li><a class="ppagina__enlace" target="_blank" href="https://www.facebook.com/Overflow.Networking/?ref=page_internal">Facebook</a></li>
-	    		<li><a class="ppagina__enlace" target="_blank" href="https://www.instagram.com/overflow.detailers/">Instagram</a></li>
-	    	</ul>
-    	</div>
-        <div  class="ppagina__marca">
-		       	<img class="ppagina__img"  src="../images/logo.png" alt="Icono Overflow" width="100"/> 
-				<p class="ppagina__texto" >OverFlow, Soluciones Informáticas de Redes Corporativas y Domiciliarias</p>
+	<footer>
+		<div class="container-footer-all">		
+			<div class="container-body">
+				<div class="column1">
+					<h1>Mas Informacion de la compañia</h1>
+					<p>
+						Brindamos soluciones integrales y a medida para el diseño de nuevas redes y también para la optimización de redes existentes. Trabajamos con TODAS las marcas del mercado, principalmente con Mikrotik y Ubiquiti. Ademas de realizar Service y venta de Laptops de ALTA GAMA.
+					</p>
+				
+				</div>
+				<div class="column2">
+					<h1>Redes Sociales</h1>
+					<div class="row1">
+						<a target="_blank" href="https://www.facebook.com/Overflow.Networking/?ref=page_internal">
+							<img src="../images/redes/facebook.png" alt="icono facebook">
+						</a>
+						<label>Siguenos en Facebook</label>
+					</div>
+	
+					<div class="row1">
+						<a  target="_blank" href="https://twitter.com/overflowapp">
+							<img src="../images/redes/gorjeo.png" alt="icono twitter">
+						</a>
+						<label>Siguenos en Twitter</label>
+					</div>
+	
+					<div class="row1">
+						<a target="_blank" href="https://www.instagram.com/overflow.detailers/">
+							<img src="../images/redes/instagram.png" alt="icono instagram">
+						</a>
+						<label>Siguenos en Instagram</label>
+					</div>
+				</div>
+				<div class="column3">
+					<h1>Informacion de Contacto</h1>
+					<div class="row2">
+						<img src="../images/redes/home.svg" alt="icono casa">
+						<label>San Salvador de Jujuy - San Matin 610 3º D</label>
+					</div>
+					<div class="row2">
+						<img src="../images/redes/phone.svg" alt="icono telefono">
+						<label>+54 388 510-70783</label>
+					</div>
+					<div class="row2">
+						<img src="../images/redes/mail.svg" alt="icono mail (carta)">
+						<label>overflow.networking@gmail.com</label>
+					</div>
+	
+				</div>
+				
 			</div>
-
-    </footer>
+			
+		</div>
+		<div class="container-footer">
+			<div class="footer">	
+			<div class="copyright">
+				&copy; 2021 Todos los derechos reservados | <a href="../index.html">Overflow-Jujuy <img src="../images/logo3.ico" alt=""></a>
+			</div>
+			<div class="information">
+				<a href="../index.html"> Informacion de la Compañia </a> | <a href="../index.html"> Privacidad y Politica </a> |  <a href="../index.html">Terminos y Condiciones</a>	
+			</div>
+			</div>
+		</div>	
+	
+		</footer>
 	
 <!-- justo antes de que cierre body -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

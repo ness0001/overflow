@@ -9,49 +9,51 @@
 	<meta name="author" content="K Stephan Torres"  />
 	<meta name="keyword" content="Conocenos, contactanos, servicios, preguntas, soluciones" />
 	 <link rel="icon" href="../images/logo3.ico">
+
+	 <!---------------------------------------------------- FONTS ----------------->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<script href="../js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/main.css"> 
 
-</head>
-<body>
-    <header > 
-		<div class="baner">
-				
-			<a class="baner__enlace" href="../index.html"><img src="../images/logo.png" alt="Icono Overflow" width="300" height="300"> <!-- tambien se puede usar width="300"/ o solo height="300"/ -->
-			</a>	
+	<header  > 
 		
-		
-			<h1 class="baner__titulo">OVERFLOW</h1>	 
-		
-	</div>
-		
-    
+		<nav class="navbar navbar-expand-lg navbar-light  costados navbar-dark bg-dark">
 
-    </header>
-    
-    <div id="cont-nav">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		   <!-- <div class="container"> -->
+			   <a class="navbar-brand" href="../index.html"> <img src="../images/logo3.ico" alt="">Overflow</a>
+		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			 <span class="navbar-toggler-icon"></span>
+		   </button>
+		   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			 <ul class="navbar-nav ml-auto">
+			   <li> <a class="nav-item nav-link" href="../index.html"> Home </a></li>
+			   <li> <a class="nav-item nav-link" href="servicios.html">Servicios </a></li>
+			   <li> <a class="nav-item nav-link" href="trabajos.html">Nuestros Trabajos</a></li> 
+			   <li> <a class="nav-item nav-link" href="productos.html">Productos <span class="badge badge-secondary anim"> Nuevo </span></a></li>
+			   <li> <a class="nav-item nav-link " href="acerca.html">Acerca de Nosotros <span class="sr-only">(current)</span></a></li>
+			   <li> <a class="nav-item nav-link active" href="#" tabindex="-1" aria-disabled="true">Contactanos</a></li>
+			 </ul>
+		   </div>
+		   <!-- </div> -->
 
-			<a class="navbar-brand" href="#"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			  <div class="navbar-nav m-auto">
-				<a class="nav-item nav-link" href="../index.html">Home </a>
-				<a class="nav-item nav-link" href="servicios.html">Servicios </a>
-				<a class="nav-item nav-link" href="trabajos.html">Nuestros Trabajos</a>
-				<a class="nav-item nav-link" href="productos.html">Productos <span class="badge badge-secondary anim"> Nuevo </span></a>
-				<a class="nav-item nav-link" href="novedades.html">Novedades</a>
-				<a class="nav-item nav-link" href="acerca.html">Acerca de Nosotros </a>
-				<a class="nav-item nav-link active" href="#" tabindex="-1" aria-disabled="true">Contactanos <span class="sr-only">(current)</span></a>
-			  </div>
-			</div>
-			
-		</nav>
-	</div>
-    <hr>
+	   </nav>
+
+   </header>
+    
+    
 
     <section >
 		
@@ -149,22 +151,71 @@
 		
 	</section>
 
-    <footer class="ppagina">
-    	<div>
-	    	<p class="ppagina__texto">Seguí a Overflow</p>
-	    	<ul class="ppagina__redes" >
-	    		<li><a class="ppagina__enlace" target="_blank" href="https://www.facebook.com/Overflow.Networking/?ref=page_internal">Facebook</a></li>
-	    		<li><a class="ppagina__enlace" target="_blank" href="https://www.instagram.com/overflow.detailers/">Instagram</a></li>
-	    	</ul>
-    	</div>
-        <div class="ppagina__marca">
-        	
-		       	<img class="ppagina__img" src="../images/logo.png" alt="Icono Overflow" width="100"/> 
-				<p class="ppagina__texto">OverFlow, Soluciones Informáticas de Redes Corporativas y Domiciliarias</p>
+    <footer>
+		<div class="container-footer-all">		
+			<div class="container-body">
+				<div class="column1">
+					<h1>Mas Informacion de la compañia</h1>
+					<p>
+						Brindamos soluciones integrales y a medida para el diseño de nuevas redes y también para la optimización de redes existentes. Trabajamos con TODAS las marcas del mercado, principalmente con Mikrotik y Ubiquiti. Ademas de realizar Service y venta de Laptops de ALTA GAMA.
+					</p>
+				
+				</div>
+				<div class="column2">
+					<h1>Redes Sociales</h1>
+					<div class="row1">
+						<a target="_blank" href="https://www.facebook.com/Overflow.Networking/?ref=page_internal">
+							<img src="../images/redes/facebook.png" alt="icono facebook">
+						</a>
+						<label>Siguenos en Facebook</label>
+					</div>
+	
+					<div class="row1">
+						<a  target="_blank" href="https://twitter.com/overflowapp">
+							<img src="../images/redes/gorjeo.png" alt="icono twitter">
+						</a>
+						<label>Siguenos en Twitter</label>
+					</div>
+	
+					<div class="row1">
+						<a target="_blank" href="https://www.instagram.com/overflow.detailers/">
+							<img src="../images/redes/instagram.png" alt="icono instagram">
+						</a>
+						<label>Siguenos en Instagram</label>
+					</div>
+				</div>
+				<div class="column3">
+					<h1>Informacion de Contacto</h1>
+					<div class="row2">
+						<img src="../images/redes/home.svg" alt="icono casa">
+						<label>San Salvador de Jujuy - San Matin 610 3º D</label>
+					</div>
+					<div class="row2">
+						<img src="../images/redes/phone.svg" alt="icono telefono">
+						<label>+54 388 510-70783</label>
+					</div>
+					<div class="row2">
+						<img src="../images/redes/mail.svg" alt="icono mail (carta)">
+						<label>overflow.networking@gmail.com</label>
+					</div>
+	
+				</div>
+				
+			</div>
 			
 		</div>
-
-    </footer>
+		<div class="container-footer">
+			<div class="footer">	
+			<div class="copyright">
+				&copy; 2021 Todos los derechos reservados | <a href="../index.html">Overflow-Jujuy <img src="../images/logo3.ico" alt=""></a>
+			</div>
+			<div class="information">
+				<a href="../index.html"> Informacion de la Compañia </a> | <a href="../index.html"> Privacidad y Politica </a> |  <a href="../index.html">Terminos y Condiciones</a>	
+			</div>
+			</div>
+		</div>	
+	
+		</footer>
 
 <!-- justo antes de que cierre body -->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
